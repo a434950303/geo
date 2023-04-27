@@ -1,0 +1,245 @@
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body, button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px / 1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+div {
+    position: relative;
+}
+
+h1 {
+    font-size: 18px; /* 18px / 12px = 1.5 */
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4, h5, h6 {
+    font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+/* 将斜体扶正 */
+code, kbd, pre, samp, tt {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+    font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/** 重置文本格式元素 **/
+a {
+    text-decoration: none;
+    color: #1fbebe;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    /*max-width:1440px;
+     min-width:1000px;*/
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1240px;
+}
+
+#header {
+    height: 80px;
+    position: relative;
+    background: url(../../../doc/images/top_bg.png) no-repeat top right;
+    border-bottom: 1px #ccc solid;
+}
+
+#header #logo {
+    position: absolute;
+    background: url(../../../doc/images/logo.png) no-repeat top right;
+    top: 20px;
+    left: 20px;
+    width: 357px;
+    height: 32px;
+}
+
+#header #toplinks {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    line-height: 30px;
+    font-size: 13px;
+    width: 400px;
+    text-align: right;
+}
+
+#main {
+    height: 610px;
+    overflow: auto;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+#footer {
+    margin-top: 1px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    border-top: 1px #ccc solid;
+}
+
+p {
+    line-height: 20px;
+}
+
+input[type =
+"button"], input[type = "submit"] {
+    padding: 0 5px;
+    font-size: 12px;
+    border: #7b9ebd 1px solid;
+    height: 20px;
+    line-height: 20px;
+    background: #eee url(../../../doc/images/btn_bg.gif) center repeat-x;
+    cursor: pointer;
+    margin: 3px 3px 3px 0;
+}
+
+.btn {
+    padding: 0 5px;
+    font-size: 12px;
+    border: #7b9ebd 1px solid;
+    height: 20px;
+    line-height: 20px;
+    background: #eee url(../../../doc/images/btn_bg.png) center repeat-x;
+    cursor: pointer;
+    margin: 3px 3px 3px 0;
+}
+
+.btn_h {
+    background: #eee url(../../../doc/images/btn_down.png) center repeat-x;
+}
+
+.smallMap {
+    width: 300px;
+    height: 300px;
+}
+
+.bigMap {
+    width: 600px;
+    height: 600px;
+}
+
+.hasBorder {
+    border: 1px solid gray;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.w30 {
+    width: 30%;
+    height: 80%;
+}
+
+.w65 {
+    width: 68%;
+    height: 80%;
+}
+
+.w100 {
+    width: 100%;
+    height: 30%;
+}
+
+.clear {
+    clear: both;
+}
+
+.standardMap {
+    width: 55%;
+    height: 55%;
+}
+
+.w40 {
+    width: 40%;
+    height: 55%;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    border-bottom: #ccc 1px solid;
+}
+
+.title h2 {
+	font-family: "微软雅黑";
+    margin: 5px 0 0 10px;
+    width: 800px;
+}
+
+.title a {
+    margin-left: 740px;
+    font-size: 13px;
+}
+
+/*控制地图div的样式*/
+.mapView {
+    float: left;
+    border: 1px solid gray;
+    width: 800px;
+    height: 600px;
+}
+.simpleMapView {
+    float: left;
+    border: 1px solid gray;
+    width: 800px;
+    height: 480px;
+}
+
+.controlView {
+    float: left;
+	width: 400px;
+    height: 602px;
+    padding-left: 10px;
+}
+
+.controlViewServices {
+    float: left;
+    height: 602px;
+    padding-left: 10px;
+}
+
+.olImageLoadError {
+    background-color: pink;
+    opacity: 0 !important;
+    filter: alpha(opacity = 0) !important;
+}
+
+.olControlOverviewMapMaximizeButton{ bottom:0!important;}
+
+.olControlOverviewMapMinimizeButton{bottom:0!important;}

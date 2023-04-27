@@ -1,0 +1,252 @@
+/*步骤*/
+.stepBox {
+	width: calc(100% - 40px);
+	height: 130px;
+	border-top: 1px solid #e4e8eb;
+	border-bottom: 1px solid #e4e8eb;
+	margin: 0 auto 20px
+}
+
+.stepBox ul {
+	width: 100%;
+	height: 70px;
+	margin: 30px auto
+}
+
+.stepBox ul li {
+	float: left;
+	width: 25%;
+	position: relative
+}
+
+.stepBox ul li .stepline {
+	width: 100%;
+	height: 3px;
+	margin-top: 20px;
+	background: #e6e6e6
+}
+
+.stepBox ul li .stepline.blue {
+	background: #0d85e4
+}
+
+.stepBox ul li .stepline.gray {
+	background: #e6e6e6
+}
+
+.stepBox ul li img {
+	position: absolute;
+	left: 50%;
+	margin-left: -21px;
+	top: 0
+}
+
+.stepBox ul li p {
+	color: #a2a2a2;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 26px
+}
+
+.stepBox ul li.in p {
+	font-weight: bold;
+	color: #0d85e4;
+	font-size: 16px
+}
+/*添加或修改列表样式修改*/
+.view-box .addBox .group .text {
+	float: left
+}
+
+.view-box .addBox .group select {
+	margin: 0;
+	padding-left: 12px;
+	background-position: 98% center
+}
+
+.view-box .addBox .group textarea {
+	float: none
+}
+
+.screen.shortscreen {
+	width: calc(100% - 80px);
+	background: #fbfdff
+}
+
+.screen.shortscreen i {
+	border-radius: 2px;
+	background: #3d92dc;
+	width: 4px;
+	height: 16px;
+	float: left;
+	margin: 10px 5px 0 0;
+}
+
+.screen .switch-metadata {
+	float: right;
+	height: 100%;
+	line-height: 30px;
+	background: url(../../../../common/image/common/icon_unfold.png) 10px
+		center no-repeat;
+	border: none;
+	border-left: 1px solid #dbe8f1;
+	font-size: 12px;
+	color: #888;
+	padding: 0 10px 0 30px;
+	outline: none
+}
+
+.screen .switch-metadata.unfold {
+	background: url(../../../../common/image/common/icon_fold.png) 10px
+		center no-repeat
+}
+/*用户授权*/
+.view-box .addBox.bigBox .group select {
+	float: none;
+	padding-left: 10px;
+	background: url(../../../../common/image/common/icon_more.png) no-repeat
+		scroll 97% center transparent !important;
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone {
+	border: none;
+	background: none;
+	padding: 0
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone .authLeftBox {
+	float: left;
+	width: calc(( 100% - 80px)/2);
+	height: 220px;
+	border: 1px solid #dce7f1
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone .authBtnBox {
+	width: 40px;
+	float: left;
+	height: 140px;
+	margin: 40px 20px 0
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone .authBtnBox .authBtn {
+	background: #3da4ff;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	margin: 5px 0;
+	padding: 0
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone .authBtnBox .authBtn img
+	{
+	display: block;
+	margin: 0 auto
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone .authRightBox {
+	float: right;
+	width: calc(( 100% - 80px)/2);
+	height: 220px;
+	border: 1px solid #dce7f1
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone p {
+	line-height: 30px
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone p input {
+	width: auto;
+	height: auto;
+	margin: 0 5px 0 20px
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone p span {
+	float: right;
+	width: 40%;
+}
+
+/*小表格*/
+/*11em文字排版*/
+.view-box .addBox.biggesttext .group .dropdown {
+	width: 400px;
+	height: 30px;
+	display: inline-block;
+	margin: 0
+}
+
+.view-box .addBox.biggesttext .group .dropdown button {
+	border: solid 1px #ccc;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	margin: 0;
+	padding: 0 12px;
+	color: #333;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.view-box .addBox.biggesttext .group .dropdown button:focus {
+	border: solid 1px #66afe9
+}
+
+.view-box .addBox.biggesttext .group .dropdown .caret {
+	border-top-color: #666;
+	position: absolute;
+	margin-top: 13px;
+	right: 12px
+}
+
+.view-box .addBox.biggesttext .group .dropdown .menubox {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	margin: 2px 0 0;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, .15);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	min-width: 100%;
+	border-radius: 2px;
+	padding: 0;
+	display: none
+}
+/*小表格*/
+.view-box .addBox.biggesttext .group .tablecontent {
+	width: 400px;
+	height: 170px;
+	float: right;
+	border: 1px solid #dce7f1;
+	background: #fff
+}
+
+.view-box .addBox.biggesttext .group .table {
+	width: 100%;
+	margin: 0;
+}
+
+.view-box .addBox.biggesttext .group .table .checkbox {
+	width: auto;
+	height: auto;
+	margin: 0
+}
+
+.view-box .addBox.biggesttext .group .table tr th {
+	background: #ebf6ff
+}
+
+.view-box .addBox.biggesttext .group .table tr th, .view-box .addBox.biggesttext .group .table tr td
+	{
+	padding: 6px 8px
+}

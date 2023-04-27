@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{width:100%;height:100%;background:#fff;}
+.iframe-main{width:100%;height:100%;background:#fff;padding-top: 5px;}
+/*当前位置*/
+.title{height:50px;line-height:50px;background:#fff;font-size:14px;color:#333}
+.title i{border-radius:2px;background:#3d92dc;width:4px;height:16px;float:left;margin:17px 5px 0 20px}
+.title span{color:#888}
+.title a{color:#333}
+/*主体*/
+.view-box{overflow:auto;height:calc(100% - 50px)}
+/*筛选条件模块*/
+.view-box .screen{width:calc(100% - 40px);height:35px;margin:0 auto;line-height:35px;color:#333;font-size:16px;padding-left:20px;background:#ebf6ff;border:1px solid #dce7f1;border-radius:2px;box-sizing:border-box}
+/*筛选条件模块按钮&文字*/
+.view-box .screen a{float:right;border-left:1px solid #dbe8f1;color:#888;padding:0 17px;font-size:14px;outline:none;height:100%}
+.view-box .screen a span{margin:0 3px 0 0;position:relative;top:2px}
+.view-box .screen a img{margin:0 3px 0 0;position:relative;top:-1px}
+.view-box .screen a b{color:#ff6969}
+.view-box .screen a i{font-style:normal;color:#1b7acd;margin:0 3px}
+/*筛选条件模块切换按钮*/
+.view-box .viewscreen{padding-left:0}
+.view-box .viewscreen .viewtab{border:none;padding:0 20px;background:none;font-size:14px;float:left;height:100%;outline:none;margin:0;color:#333;border-right:1px solid #dce7f1}
+.view-box .viewscreen .viewtab:focus,.view-box .viewscreen .viewtab.in{background:#fff;border-right:1px solid #dce7f1}
+/*条件筛选模块搜选框&按钮&勾选*/
+.view-box .toolBox{width:100%;min-height:70px;padding-top:20px;padding-bottom:10px;margin:0
+auto;}
+.view-box .group{display:inline-block;margin-bottom:10px;font-size:14px;line-height:30px}
+.view-box .toolBox .group span{color:#333;font-size:14px;margin:0 5px 0 30px}
+/*输入框*/
+.view-box .group input{width:230px;height:30px;border-radius:2px;font-size:14px;display:inline-block;}
+.view-box .group input.time{width:230px;height:30px;border-radius:2px;display:inline-block;background:url(../image/common/icon_time.png) 10px center no-repeat,url(../image/common/icon_more.png) 97% center no-repeat;padding-left:30px;cursor: pointer}
+/*按钮*/
+.view-box button{padding:0 25px 0 25px;height:30px;line-height:30px;color:#fff;border:none;border-radius:3px;margin:0;margin-left:30px}
+.view-box button.searchbtn{background:#1b7acd 15px center no-repeat;}
+.view-box button.submitbtn{background:#1b7acd url(../image/common/icon_submit.png) 15px center no-repeat;}
+.view-box button.resetbtn{background:#f1f1f2 15px center no-repeat;color:#666;margin-left:10px}
+.view-box button.setupbtn{background:#2da85b url(../image/common/icon_setup.png) 15px center no-repeat;margin-left:10px;}
+.view-box button.uploadbtn{background:#2da85b url(../image/common/icon_upload.png) 15px center no-repeat;margin-left:10px;}
+.view-box button.deletebtn{background:#f49292 url(../image/common/icon_delete.png) 15px center no-repeat;margin-left:10px;}
+/*下拉框*/
+.view-box .group .preview{width:220px;height:30px;float:right}
+.view-box .toolBox .group .preview span{margin:0}
+.view-box .toolBox .group .dropSearch{width:320px;height:30px;display:inline-block}
+.view-box .toolBox .group .dropSearch .preview{float:left;width:70px;}
+.view-box .toolBox .group .dropSearch .preview select{width:110%;border-radius:2px 0 0 2px;border-right:none;padding-left:8px;background-position:87% center;}
+.view-box .toolBox .group .dropSearch input{width:250px;height:30px;padding:0 10px;border-radius:0 2px 2px 0}
+/*下拉框new*/
+.view-box .toolBox .group select{width:220px;height:30px;display:inline-block;border: solid 1px #ccc;appearance:none;-moz-appearance:none;-webkit-appearance:none;background:url(../../common/image/common/icon_more.png)  no-repeat scroll 95% center transparent;border-radius:2px;margin-right:10px}
+.view-box .toolBox .group select:focus{border: solid 1px #66afe9}
+/*勾选*/
+.view-box .toolBox .checkBox{display:inline-block;margin-left:10px}
+.view-box .toolBox .checkBox .check,.view-box .toolBox .checkBox .checkv{cursor:pointer;position:absolute;margin:2px 10px 0 5px}
+.view-box .toolBox .checkBox span{margin-left:25px}
+.view-box .toolBox .checkBox .checkv{display:none}
+/*数据检索*/
+.view-box .typeBox{width:calc(100% - 40px);margin:0 auto;font-size:14px;}
+.view-box .typeBox span.text{float:left;width:100px;text-align:right;line-height:40px}
+.view-box .typeBox ul{padding-left:110px;border-bottom:1px dashed #d9d9d9}
+.view-box .typeBox ul:last-child{border:none}
+.view-box .typeBox ul li{float:left;padding:6px 10px;margin:8px 3px;color:#666;line-height:1;border-radius:2px}
+.view-box .typeBox ul a:hover li,.view-box .typeBox ul li.in{background:#1db7ff;color:#fff}
+/*输入框下方虚线分隔*/
+.splitLine{border-bottom: 1px dashed #d9d9d9 !important;border-bottom-width:15px;width:calc(100% - 40px);margin-left:20px; }
+/*添加或修改列表样式输入框&下拉框&radio&按钮*/
+.view-box .addBox{width:500px;margin-left:40px;margin-top:10px}
+.view-box .addBox .group{margin-bottom:10px;font-size:14px;line-height:30px;}
+/*文字*/
+.view-box .addBox .group span.text{color:#333;font-size:14px;width:100px;display:inline-block;text-align:right;}
+.view-box .bigtext .group span.text{width:115px}
+.view-box .biggesttext{width:570px}
+.view-box .biggesttext .group span.text{width:170px}
+/*超出内容排版*/
+.view-box .addBox .group i{position:absolute;margin:0px 0 0 5px;font-style:normal;font-size:14px}
+.view-box .addBox .group i.red{color:#f00;font-size:18px;}
+.view-box .addBox .group i.light{color:#999}
+.view-box .addBox .group button.selectbtn{padding:0 20px;height:30px;line-height:30px;color:#fff;border:none;border-radius:3px;margin:0 20px;outline:none;position:absolute;margin-left:10px;
+    background:#1b7acd;}
+.view-box .addBox .group button.searchbtn{padding:0 20px;height:30px;line-height:30px;color:#fff;border:none;border-radius:3px;margin:0 20px;outline:none;position:absolute;margin-left:10px;
+    background:#30a95a;}
+.view-box .addBox .group button.testbtn{padding:0 20px;height:30px;line-height:30px;color:#fff;border:none;border-radius:3px;margin:0 20px;outline:none;position:absolute;margin-left:10px;
+    background:#30a95a;}
+/*输入框*/
+.view-box .addBox .group input{width:400px;height:30px;border-radius:2px;font-size:14px;display:inline-block;}
+/*textarea样式*/
+.view-box .addBox .group textarea{width:400px;height:60px;resize: none;border-radius:2px;float:right;margin-right:calc(100% - 104px - 400px);}
+/*按钮*/
+.view-box .addBox .buttonbox{width:100%;text-align:center;margin:20px 0}
+.view-box .addBox .buttonbox button{padding:0 20px;height:30px;line-height:30px;color:#fff;border:none;border-radius:3px;margin:0 20px;outline:none;font-size:14px}
+.view-box .addBox .buttonbox button.testbtn{background:#1b7acd}
+.view-box .addBox .buttonbox button.stepbtn{background:#1b7acd}
+.view-box .addBox .buttonbox button.savebtn{background:#1b7acd}
+.view-box .addBox .buttonbox button.cancelbtn{background:#f1f1f2;color:#666}
+.view-box .addBox .group input.radio{width:auto;height:auto;position:relative;top:2px;margin:0 5px 0 10px }
+/*下拉框*/
+.view-box .addBox .group .preview{width:400px;height:30px;float:right}
+.view-box .addBox .group .preview span{margin:0;width:100%}
+/*下拉框new*/
+.view-box .addBox .group select{width:400px;height:30px;/*float:right;*/border: solid 1px #ccc;appearance:none;-moz-appearance:none;-webkit-appearance:none;background:url(../../common/image/common/icon_more.png)  no-repeat scroll 95% center transparent;border-radius:2px;margin-right:10px}
+.view-box .addBox .group select:focus{border: solid 1px #66afe9}
+/*添加同步任务-选择原始数据-勾选数据*/
+.view-box .addBox .dataCheckBox{width:400px;min-height:150px;border-radius:2px;float: right;}
+.view-box .addBox .dataCheckBox .group input{width:197px}
+.view-box .addBox .dataCheckBox .group button{margin-left:5px}
+.view-box .addBox .dataCheckBox .mCSB_container{margin-right:0}
+/*添加或修改列表样式输入框(大列表样式)*/
+.view-box .addBox.bigBox{width:80%;}
+.view-box .addBox.bigBox .group{width:100%;}
+.view-box .addBox.bigBox .group .settingBox{width:calc(100% - 104px);background:#fbfdff;border:1px solid #dce7f1;border-radius:3px;float:right;padding:10px 5px 0}
+.view-box .addBox.bigBox .group .settingBox select{width:calc((100% - 100px - 40px)/3);height:30px;display:inline-block;border: solid 1px #ccc;appearance:none;-moz-appearance:none;-webkit-appearance:none;background:  no-repeat scroll 95% center transparent;border-radius:2px;margin-right:10px}
+.view-box .addBox.bigBox .group .settingBox select:focus{border: solid 1px #66afe9}
+.view-box .addBox.bigBox .group .settingBox .dropdown{width:calc((100% - 100px - 48px)/3);height:30px;display:inline-block;margin:0 10px 0 0}
+.view-box .addBox.bigBox .group .settingBox .dropdown button{border: solid 1px #ccc;appearance:none;-moz-appearance:none;-webkit-appearance:none;border-radius:2px;margin:0;padding:0 12px;color:#333;text-align:left;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.view-box .addBox.bigBox .group .settingBox .dropdown button:focus{border:solid 1px #66afe9}
+.view-box .addBox.bigBox .group .settingBox .dropdown .caret{border-top-color:#666;position:absolute;margin-top:13px;right:12px}
+.view-box .addBox.bigBox .group .settingBox .dropdown .menubox{position:absolute;top:100%;left:0;z-index:1000;float:left;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175);min-width:100%;border-radius:2px;padding:0;display:none}
+.view-box .addBox.bigBox .group .settingBox .time,.view-box .addBox.bigBox .group .settingBox input{width:calc(((100% - 100px - 40px)/3)*2 + 10px);}
+.view-box .addBox.bigBox .shortselect{width:400px;float:none;margin:0;display:inline-block;border-radius:2px;background: url(../../common/image/common/icon_more.png) no-repeat scroll 97% center transparent;height:30px;appearance:none;-moz-appearance:none;-webkit-appearance:none}
+.view-box .addBox.bigBox .group .screen{width:calc(100% - 104px);margin:0;float:right;border-radius:0}
+.view-box .addBox.bigBox .group .table{width:calc(100% - 104px);margin:0;float:right;border:1px solid #dce7f1;border-top:none}
+.view-box .addBox.bigBox .group .table .checkbox{width:auto;height:auto}
+.view-box .addBox.bigBox .group.taskblock{display:none}
+/*添加或修改列表样式输入框（一行两列）*/
+.view-box .addBox.doubleBox{width:calc(100% - 40px);margin:10px auto 0}
+.view-box .addBox.doubleBox .group{width:50%;float:left}
+.view-box .addBox.doubleBox .group input{width:calc(90% - 100px);float:left}
+.view-box .addBox.doubleBox .group select{width:calc(90% - 100px);float:left}
+/*表格样式*/
+.view-box .list{width:100%;box-sizing:border-box;margin:0 auto;overflow-y:auto}
+.view-box .table{width:calc(100% - 40px);margin:0 auto; border-collapse:collapse;}
+.view-box .table tr td:first-child,.view-box .table tr th:first-child{position:relative}
+/*表格勾选*/
+.view-box .table .check,.view-box .table .checkv{cursor:pointer;position:absolute;margin-top:2px}
+.view-box .table .checkv{display:none}
+/*表格文字*/
+.view-box .table a{margin:0 5px;/*color:#333*/}
+.view-box .table a img{margin:-3px 0 0;}
+.view-box .table a:hover{text-decoration:underline}
+.view-box .table tr th{border-top:none;border-bottom:1px dashed #dce7f1;font-weight:bold;line-height:1;font-size:14px;padding:16px 8px;color:#333}
+.view-box .table tr td{border-top:none;border-bottom:1px dashed #dce7f1;line-height:1;font-size:14px;padding:16px 8px;color:#666;table-layout:fixed;word-break:break-all;}
+.view-box .table thead tr th:first-child,.view-box .table tbody tr th:first-child,.view-box .table tbody tr td:first-child{padding-left:20px;padding-right:15px}
+.view-box .table thead tr:hover th,.view-box .table tbody tr:hover th,.view-box .table tbody tr:hover td{background:#f1f9ff}
+.view-box .table tr td.license{color:#1563a7;cursor:pointer}
+/*表格异常类别*/
+.view-box .table tr td span{border-radius:3px;color:#fff;padding:3px 0;width:70px;text-align:center;line-height:1}
+.view-box .table tr td span.normal{background:#00be80;display:block}/*绿色*/
+.view-box .table tr td span.abnormal{background:#eb423a;display:block}/*红色*/
+.view-box .table tr td span.unknown{background:#1cb7ff;display:block}/*蓝色*/
+.view-box .table tr td span.warning{background:#f39534;display:block}/*橙色*/
+/*表格异常类别5-7字*/
+.view-box .table tr td span.longspan{width:110px;}
+/*列表带图的表格*/
+.view-box .imageTable .table tr td:first-child{min-width:100px;}
+.view-box .imageTable .table tr{min-height:150px;}
+.view-box .imageTable .table tr td{padding:16px 3px}
+.view-box .imageTable .table tr td h5{color:#1563a7;font-weight:bold;line-height:40px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;cursor:pointer}
+.view-box .imageTable .table .tableimg{width:80px;height:80px;cursor:pointer;position:relative;border:1px solid #e2e9ef;background:#f2f5f8}
+.view-box .imageTable .table .tableimg .tableicon{position:absolute;right:0;bottom:0;width:22px;height:22px;}
+.view-box .imageTable .table .tableimg input{position:absolute;top:0;left:0;margin:0}
+.view-box .imageTable .table .tableimg:hover{border:1px solid #70c7ff;background:#ebf6ff}
+.view-box .imageTable .table tr td p{width:99%;line-height:32px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.view-box .imageTable .table tr td p.describe{position:inherit;width:200%}
+.view-box .imageTable .table tr td p.tablebtn{height:35px;line-height:27px;font-weight:normal;color:#666;}
+.view-box .imageTable .table tr td span.borderText{margin:0 3px;border:1px solid #ddd;padding:4px 5px;color:#666;border-radius:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;min-width:100px;max-width:10em;line-height:1;display:inline-block;position:relative;top:8px}
+.view-box .imageTable .table tr td .orange{color:#fe7709;margin:0 5px}
+.view-box .imageTable .table tr td:last-child p{position:relative}
+/*空白区域背景*/
+.blankbg{background:url(../image/common/blankbg.png) bottom center no-repeat;background-size:100% auto}
+.screen .switch_server{float:right;height:100%;line-height:30px;background:url(../image/common/icon_unfold.png) 10px center no-repeat;border:none;border-left:1px solid #dbe8f1;font-size:14px;color:#888;padding:0 10px 0 30px;outline:none}
+.screen .switch_server.unfold{background:url(../image/common/icon_fold.png) 10px center no-repeat;font-size:14px;}
+.view-box .form-img{width:150px;height:100px;}
+.view-box .addBox .group a-upload{padding: 0 10px;height: 40px;line-height: 40px;position: relative;cursor: pointer;color: #888;background: #fafafa;border: 1px solid #ddd;border-radius: 4px;overflow: hidden;display: inline-block;float: left;margin-left: 10px;}
+.view-box .addBox .group a-upload:hover{color: #444;background: #eee;border-color: #ccc;text-decoration: none}
+.view-box .addBox .group input[type="file"]{position: absolute;font-size: 100px;right: 0;top: 0;opacity: 0;filter: alpha(opacity=0);cursor: pointer}
+.view-box .table-metaInfoList{width:85% !important;border-left:1px solid #dce7f1}
+.view-box .table-serviceImg{width:15% !important;float:left;}
+.view-box .table-serviceImg img{width:100%;}
+.view-box .addBox.bigBox.serviceMetadata .group{width:49%}
+.view-box .serviceMetadata .group input{width:calc(100% - 110px)}
+.view-box .serviceMetadata .group select{width:calc(100% - 110px);margin-right:0;}
+.view-box .serviceMetadata .textValue,.view-box .serviceMetadata .selectValue,.view-box .serviceMetadata .treeValue{width: 100% !important;}
+.view-box .serviceMetadata .textValue input{width: calc(100% - 128px);}
+.view-box .serviceMetadata .treeValue input{width: calc(100% - 128px);}
+.view-box .addBox.bigBox .treeValue .settingBox{width:calc(100% - 128px);margin-right:25px}
+.view-box .addBox.bigBox .selectValue .screen{width:calc(100% - 128px);margin-right:25px}
+.view-box .addBox.bigBox .selectValue .table{width:calc(100% - 128px);margin-right:25px}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width: calc(90% - 100px);float: left;}
+.view-box .dropdown-toggle{float: left;margin: 0;padding-left: 12px;background-position: 98% center;height: 30px;border: solid 1px #ccc;color: #555555;}
+.dropdown-menu>li>a{height:30px;line-height:30px;}
+.view-box .addBox.bigBox .selectValue tbody td{padding-top:5px;padding-bottom:5px;}
+.view-box .addBox.bigBox .selectValue tbody td a{float:left;margin-left:calc(50% - 10px);margin-top:5px;}
+
+/*ArcGIS 服务文件上传*/
+.eg-div{margin-left:104px;}
+.eg-sign{color:red;}
+

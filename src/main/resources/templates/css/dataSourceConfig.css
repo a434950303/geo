@@ -1,0 +1,155 @@
+.managebox {
+	width: 100%;
+	height: 250px;
+	border: 1px solid #dce7f1;
+}
+
+.managebox .group {
+	margin-top: 18px;
+	width: 50%;
+	float: left
+}
+
+.managebox .group span.text {
+	color: #333;
+	font-size: 14px;
+	width: 90px;
+	display: inline-block;
+	margin-right: 5px;
+	text-align: right
+}
+
+.managebox .group input {
+	width: calc(100% - 110px);
+	height: 30px;
+	border-radius: 2px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.memberbox {
+	width: 100%;
+	height: calc(100% - 270px);
+	border: 1px solid #dce7f1;
+	margin-top: 20px
+}
+
+.memberbox .tablelist {
+	width: calc(50% - 4% - 20px);
+	height: calc(100% - 75px);
+	border: 1px solid #dee8f2;
+	float: left;
+	box-sizing: border-box;
+	margin: 20px 2% 0
+}
+
+.memberbox .tablelist p {
+	background: #fbfdff;
+	border-bottom: 1px solid #dce7f1;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	padding-left: 20px;
+	box-sizing: border-box
+}
+
+.memberbox .tablelist .table {
+	width: 100%;
+	max-height: 100%;
+}
+
+#unConfiguredScroll {
+	width: 100%;
+	max-height: 85%;
+}
+
+#configuredScroll {
+	width: 100%;
+	max-height: 85%;
+}
+
+.memberbox .btnchange {
+	float: left;
+	width: 40px;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	margin-top: -25px
+}
+
+.memberbox .btnchange button {
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	background: #3da4ff;
+	border: none;
+	display: block;
+	margin: 10px auto;
+	color: #fff;
+}
+
+.view-box .addBox .group .table {
+	width: 100% !important;
+	margin: 0;
+	border: 0px !important;
+}
+
+.view-box .addBox .group .table .checkbox {
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+/*.view-box .addBox .group .table tr th{padding:10px 8px 16px 8px !important;}
+.view-box .addBox .group .table tr td{padding:16px 8px 0px 8px !important;}*/
+.view-box .addBox .group .table tr th {
+	padding: 6px 8px !important;
+	text-align: center;
+}
+
+.view-box .addBox .group .table tr td {
+	padding: 6px 8px !important;
+	font-size: 12px !important;
+	text-align: center;
+}
+
+.authLeftBox .screen, .authRightBox .screen {
+	width: 100% !important;
+}
+
+.view-box .addBox .group .table tr td select {
+	margin: 0;
+	padding-left: 12px;
+	background-position: 98% center;
+	width: 60px !important;
+}
+
+.view-box .addBox.bigBox .settingBox.borderNone .authBtnBox {
+	margin: 60px 20px 0 !important;
+}
+/*鎼滅储鎸夐挳*/
+.search_Btn {
+	padding: 0 20px !important;
+	height: 30px !important;
+	line-height: 30px !important;
+	color: #fff !important;
+	border-radius: 3px !important;
+	margin: 0 20px !important;
+	margin-left: 10px !important;
+	background: #30a95a !important;
+}
+
+/*锟教讹拷锟斤拷头锟斤拷只锟斤拷tbody锟斤拷庸锟斤拷锟斤拷锟�*/
+table tbody {
+	display: block;
+	height: 159px;
+}
+
+table thead, tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+table thead, tbody {
+	width: calc(100% - 1em)
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>服务注册测试页面</title>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/test.js"></script>
+
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/step.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    </head>
+    <body>
+        <form>
+            <div class="iframe-main blankbg" style="overflow-y: auto;">
+                <div class="view-box">
+                    <!--                <form id="serviceMetaForm" name="serviceMetaForm" onsubmit="return validate_form()">-->
+                    <div class="screen">基本信息</div>
+                    <div class="addBox doubleBox box">
+                    <span>
+                        <div class="group">
+                            <span class="text2" >地理实体成果库索引地址：</span>
+                            <!--                        <div class="esIpformError parentFormserviceMetaForm formError" style="opacity: 0.87; position: absolute; top: 200px; left: 559px; margin-top: -74px;">-->
+                            <!--                            <div class="formErrorContent">* 此处不可空白<br>* 最少 2 个字符<br>服务名称使用英文或数字名称<br></div>-->
+                            <!--                            <div class="formErrorArrow">-->
+                            <!--                                <div class="line4">&lt;!&ndash; &ndash;&gt;</div>-->
+                            <!--                                <div class="line3">&lt;!&ndash; &ndash;&gt;</div>-->
+                            <!--                                <div class="line2">&lt;!&ndash; &ndash;&gt;</div>-->
+                            <!--                                <div class="line1">&lt;!&ndash; &ndash;&gt;</div>-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <input id="esIp" name="esIp" data-prompt-position="topRight" class="form-control validate[required,minSize[2],maxSize[50],funcCall[checkOption]]" type="text" placeholder="请输入Elasticsearch 地址">
+                        </div>
+                        <div class="group">
+                            <span class="text2" style="float: left;">地理实体成果库索引端口：</span>
+                            <input id="esPort" name="esPort" class="form-control validate[required,minSize[2],maxSize[50]]" data-prompt-position="topRight" type="text" placeholder="请输入Elasticsearch 端口">
+                        </div>
+                    </span>
+
+                        <div class="group">
+                            <span class="text2" style="float: left;">实体关系图数据库地址：</span>
+                            <input id="dgraphIp" name="dgraphIp" data-prompt-position="topRight" class="form-control validate[required,minSize[2],maxSize[50],funcCall[checkOption]]" type="text" placeholder="请输入Dgraph 地址">
+                        </div>
+                        <div class="group">
+                            <span class="text2" style="float: left;">实体关系图数据库端口：</span>
+                            <input id="dgraphPort" name="dgraphPort" class="form-control validate[required,minSize[2],maxSize[50]]" data-prompt-position="topRight" type="text" placeholder="请输入Dgraph 端口">
+                        </div>
+                        <div class="group">
+                            <span class="text2" style="float: left;">地理实体索引映射关系名：</span>
+                            <input id="stdbmsprotable" name="stdbmsprotable" data-prompt-position="topRight" class="form-control validate[required,minSize[2],maxSize[50],funcCall[checkOption]]" type="text" >
+                        </div>
+                        <div class="group">
+                            <span class="text2" style="float: left;">关联专题数据索引名称：</span>
+                            <input id="index" name="index" class="form-control validate[required,minSize[2],maxSize[50]]" data-prompt-position="topRight" type="text">
+                        </div>
+                    </div>
+                    <!--                </form>-->
+                </div>
+            </div>
+
+        </form>
+    </body>
+
+    <script>
+        //发送数据
+        window.addEventListener('message',function(event){
+            if(window.parent !== event.source){return}
+            console.log(event);
+            if(event.data['ACTION']=="CREATE"){//新增
+                parent.postMessage(save(), event.data['MAIN_URL']);
+            }else if(event.data['ACTION']=="UPDATE"){//编辑
+                eidt(event.data['JSON']);
+            }
+        }, false);
+    </script>
+
+    <style>
+        .text2{
+            float: left;
+            margin-right: 5px;
+            width: 170px!important;
+        }
+
+        .view-box .addBox.doubleBox .group input {
+            width: 400px;!important;
+        }
+
+        .view-box .addBox.doubleBox .group {
+            width: 50%;
+            float: none;
+            margin-left: 40px;
+        }
+
+        .box{
+
+        }
+        .formError .formErrorContent {
+            position: relative;
+            width: 100%;
+            min-width: 120px;
+            padding: 4px 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            background-color: #ee0101;
+            box-shadow: 0 0 6px #000;
+            color: #fff;
+            font: 12px/18px "\5b8b\4f53", Tahoma;
+        }
+    </style>
+
+</html>
